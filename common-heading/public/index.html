@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="CommonHeadingApp">
+<head>
+  <title>Common Heading</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <base href="/" />
+</head>
+<body>
+  <div class="container">
+    <h1>Common Heading Exercise</h1>
+    <p>My favorite classes are <a href="/rcb">Rutgers Coding Bootcamp</a>, <a href="/expoz">Expository Writing 101</a>, <a href="/calc">Calculus</a>, <a href="/chem">Chemistry</a>, and <a href="/bio">Biology</a></p>
+    <ng-view></ng-view>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-route.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
