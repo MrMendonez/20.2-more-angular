@@ -1,5 +1,5 @@
 angular.module('RoutingApp', ['ngRoute'])
-  .config(['$routeProvider', function($routeProvider) {
+  .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
     .when('/first', {
       templateUrl: 'first.html'
@@ -10,4 +10,10 @@ angular.module('RoutingApp', ['ngRoute'])
     .otherwise({
       redirectTo: '/'
     });
-  }]);
+
+    $locationProvider.html5Mode(true);
+  }])
+
+  .controller('RouterController', function($scope) {
+    $scope.footerUrl = 'footer.html';
+  });
