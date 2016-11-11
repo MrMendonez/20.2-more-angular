@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="NucleusGlobalApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Nucleus Global</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <base href="/" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div ng-include="'assets/views/navbar.html'"></div>
+
+    <div class="container">
+      <ui-view></ui-view>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <!-- custom JS -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/configs/appStates.js"></script>
+    <script type="text/javascript" src="assets/js/controllers/homeController.js"></script>
+    <script type="text/javascript" src="assets/js/controllers/articulateScienceController.js"></script>
+    <script type="text/javascript" src="assets/js/controllers/chrysalisController.js"></script>
+    <script type="text/javascript" src="assets/js/directives/nucleusGlobalItem.js"></script>
+  </body>
+</html>

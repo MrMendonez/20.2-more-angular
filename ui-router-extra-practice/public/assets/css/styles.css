@@ -1,0 +1,3 @@
+.no-bullets > li {
+    list-style-type: none;
+}
