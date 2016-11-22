@@ -1,0 +1,10 @@
+<li>
+  <strong ng-mouseenter="loadRepos(student)" ng-mouseleave="clearRepos()">{{ student }}</strong> submitted to {{ repo }}
+  <div ng-show="repos.length > 0">
+    <h4>Repos</h4>
+    <div ng-repeat="repo in repos">
+      {{ repo.full_name }}
+    </div>
+  </div>
+
+</li>

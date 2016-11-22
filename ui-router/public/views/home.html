@@ -1,0 +1,7 @@
+<div class="row" ng-controller="HomeworkController">
+  <div class="col-md-6">
+    <ul>
+      <homework-item ng-repeat="homework in homeworks" student="{{homework.student}}" repo="{{homework.repo}}"></homework-item>
+    </ul>
+  </div>
+</div>
